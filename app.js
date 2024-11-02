@@ -17,8 +17,15 @@ let totalScore2 = 0
 
 const togglePlayer = () => {
     switchPlayer = !switchPlayer;
-    player1Area.style.backgroundColor = switchPlayer ? "rgb(202, 202, 202)" : "rgb(151, 151, 151)";
-    player2Area.style.backgroundColor = switchPlayer ? "rgb(151, 151, 151)" : "rgb(202, 202, 202)";
+
+    player1Area.style.background = switchPlayer 
+        ? '#d6a2ae' 
+        : '#b56c80';
+
+    player2Area.style.background = switchPlayer 
+        ? '#b56c80' 
+        : '#d6a2ae';
+
 };
 
 rollBtn.addEventListener('click', () => {
@@ -57,7 +64,7 @@ hold.addEventListener('click', () => {
         rollBtn.disabled = hold.disabled = true;
         img.style.display = "none";
         winner.innerHTML = totalScore1 >= 100 && totalScore2 >= 100 ? "Match is tied" :
-                           totalScore1 >= 100 ? "Player 1 is winner" : "Player 2 is winner";
+            totalScore1 >= 100 ? "Player 1 is winner" : "Player 2 is winner";
         winner.style.display = "block";
     } else {
         togglePlayer();
