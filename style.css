@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    /* background: rgb(2,0,36); */
+    height: 100vh;
+    background: linear-gradient(-45deg, rgb(133 0 99) 15%, rgb(144 25 25) 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainArea {
+    width: 60%;
+    height: 500px;
+    background-color: #f2f2f2;
+    /* background: transparent; */
+    border-radius: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    position: relative;
+
+}
+
+.gamearea {
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#player1Area {
+    background-color: rgb(202, 202, 202);
+    /* border-radius: ; */
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+#player2Area {
+    background-color: rgb(151, 151, 151);
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.resultNum {
+    color: rgb(144 25 25);
+    font-size: 5rem;
+}
+
+.scoreBox {
+    width: 47%;
+    border-radius: 14px;
+    height: 77px;
+    background-color: rgb(188 0 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.score {
+    font-size: 2rem;
+
+}
+
+.newgame {
+    /* width: 150px; */
+    text-align: center;
+    position: absolute;
+    padding: 5px 15px 5px 15px;
+    left: 43%;
+    top: 8%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    cursor: pointer;
+}
+
+.image {
+    position: absolute;
+    left: 43.5%;
+    top: 25%;
+    height: 100px;
+  /* box-shadow: 5px 5px 5px grey; */
+  border-radius: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.loadgame {
+    top: 70%;
+    left: 44%;
+}
+
+#hold {
+    left: 46%;
+    top: 80%;
+}
+
+#winner{
+    top: 45%;
+    left: 22%;
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: none;
+}

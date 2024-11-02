@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainArea">
+
+        <button class="newgame" id="newgame">
+            NEW GAME
+        </button>
+
+        <div class="image" >
+            <img id="img"  alt="">
+        </div>
+        <div  id="winner">
+            Player  is Winner
+        </div>
+
+        <button class="newgame loadgame" id="rollBtn">
+            ROLL DICE
+        </button>
+        <button class="newgame loadgame " id="hold" >
+            HOLD
+        </button>
+
+
+        <div id="player1Area" class=" gamearea">
+            <div style="text-align: center;">
+
+                <h1>Player 1</h1>
+                <span id="userOneres" class="resultNum">0</span>
+            </div>
+            <div class="scoreBox" >
+                <p>Current</p>
+                <!-- <button id="userOneScore" disabled class="score">0</button> -->
+                <span id="userOneScore" class="score">0</span>
+            </div>
+        </div>
+
+
+        <div id="player2Area" class=" gamearea">
+            <div style="text-align: center;">
+
+                <h1>Player 2</h1>
+                <span id="userTwores" class="resultNum">0</span>
+            </div>
+            <div class="scoreBox">
+                <p>Current</p>
+                <span id="userTwoScore" class="score">0</span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
