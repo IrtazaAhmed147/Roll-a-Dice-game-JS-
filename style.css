@@ -14,6 +14,23 @@ body {
     align-items: center;
 }
 
+.centerBox {
+    position: absolute;
+    left: 42%;
+    /* top: 8%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 93%;
+}
+.rollHoldBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
 .mainArea {
     width: 60%;
     height: 500px;
@@ -33,7 +50,7 @@ body {
 }
 
 #player1Area {
-   background-color: #d6a2ae;
+    background-color: #d6a2ae;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
 }
@@ -65,13 +82,11 @@ body {
     font-size: 2rem;
 }
 
-.newgame {
+.featureButtons {
     text-align: center;
-    position: absolute;
-    padding: 5px 15px;
-    left: 43%;
-    top: 8%;
-    background-color: #fff;
+    padding: 2px 11px;
+
+    background-color: #ffffffc9;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: none;
@@ -83,9 +98,9 @@ body {
 }
 
 .image {
-    position: absolute;
-    left: 43.5%;
-    top: 25%;
+    position: relative;
+    /* left: 43.5%; */
+    /* top: 25%; */
     height: 100px;
     border-radius: 18px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -97,22 +112,9 @@ body {
     width: 100%;
 }
 
-.loadgame {
-    top: 70%;
-    left: 44%;
-}
-
-#hold {
-    left: 46%;
-    top: 80%;
-}
-
 #winner {
-    top: 45%;
-    left: 22%;
-    position: absolute;
     font-size: 3.5rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #fff;
     display: none;
 }

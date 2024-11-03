@@ -15,25 +15,33 @@
 </head>
 
 <body>
+    <div  id="winner">
+        <h1 >Player  is Winner </h1>
+        
+    </div>
     <div class="mainArea">
+        <div class="centerBox">
 
-        <button class="newgame" id="newgame">
-          <img src="./assets/newgame.png" width="35px" height="35px" alt="">  NEW GAME
-        </button>
+            
+            <button class="featureButtons" id="newgame">
+                <img src="./assets/newgame.png" width="35px" height="35px" alt="">  NEW GAME
+            </button>
+            
+            <div class="image" >
+                <img id="img"  alt="">
+            </div>
 
-        <div class="image" >
-            <img id="img"  alt="">
+            <div class="rollHoldBox">
+
+                
+                <button class="featureButtons loadgame" id="rollBtn">
+                    <img width="25px" height="25px" src="./assets/dice.png" alt=""> ROLL DICE
+                </button>
+                <button class="featureButtons loadgame " id="hold" >
+                    <img width="25px" height="25px" src="./assets/hold.png" alt=""> HOLD
+                </button>
+            </div>
         </div>
-        <div  id="winner">
-            Player  is Winner
-        </div>
-
-        <button class="newgame loadgame" id="rollBtn">
-           <img width="25px" height="25px" src="./assets/dice.png" alt=""> ROLL DICE
-        </button>
-        <button class="newgame loadgame " id="hold" >
-            <img width="25px" height="25px" src="./assets/hold.png" alt=""> HOLD
-        </button>
 
 
         <div id="player1Area" class=" gamearea">
